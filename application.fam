@@ -1,0 +1,17 @@
+# For details & more options, see documentation/AppManifests.md in firmware repo
+
+App(
+    appid="autoclick_app",  # Must be unique
+    name="AutoClicker",  # Displayed in menus
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="autoclick_app_app",
+    stack_size=2 * 1024,
+    fap_category="Examples",
+    # Optional values
+    # fap_version=(0, 1),  # (major, minor)
+    fap_icon="autoclick_app.png",  # 14x14 1-bit PNG
+    # fap_description="Bluetooth AutoClicker - WIP",
+    # fap_author="GenericApple",
+    # fap_weburl="https://github.com/agenericapple/autoclicker",
+    fap_icon_assets="images",  # Image assets to compile for this application
+)
